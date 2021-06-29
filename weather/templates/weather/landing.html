@@ -1,0 +1,99 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing</title>
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+</head>
+
+
+<body>
+    <div class="container" style="background-color: #e5d5b2;">
+        <h1> SUP BITCHES </h1>
+        <div class="row justify-content-xs-center">
+          <!-- Left -->
+          <div class="col ">
+            <div class="row justify-content-center align-self-center" style="height: 100px;">
+              
+              <h1 class="weather-stats" style="font-size: 40px;"> 12 </h1>
+              <img src="{% static 'weather/images/humidity.PNG' %}" class="side-img" alt="">
+              
+            </div>
+            <div class="row justify-content-center align-self-center" style="height: 100px;">
+              <h1 class="weather-stats" style="font-size: 30px;"> 30mph </h1>
+              <img src="{% static 'weather/images/wind.PNG' %}" class="side-img" alt="">
+              
+            </div>
+          </div>
+
+          <!-- Centre -->
+          <div class="col-6">
+            <div class="row-6" style="">
+                <img src="{% static 'weather/images/Alexandria.PNG' %}" class="main-img" alt="">
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="col">
+            <div class="col">
+              <div class="row justify-content-center align-self-center" style="height: 100px;">
+                <h1 class="weather-stats" style="font-size: 40px;"> 95°F </h1>
+              </div>
+              <div class="row justify-content-center align-self-center" style="height: 100px;">
+                <h1 class="weather-stats" style="font-size: 34px;"> 5% </h1>
+                <img src="{% static 'weather/images/precipitation.PNG' %}" class="side-img" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="row justify-content-xs-center">
+          <div class="col-xs-2">
+            <br>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-danger">
+              Alerts! <span class="badge badge-light">2</span>
+              <span class="sr-only">unread messages</span>
+            </button>
+          </div>
+          <div class="col-6">
+            <h2 style="text-align: center;"> Alexandria </h2>
+          </div>
+          <div class="col-3">
+            
+          </div>
+        </div>
+
+        <!-- Below -->
+        <div class="overflow-auto">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Museum of the Biblotheca
+              <span class="badge badge-primary badge-pill">4/5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Corniche
+              <span class="badge badge-primary badge-pill">2</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Morbi leo risus
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <br/>
+    <div class="container"></div>
+
+</body>
+</html>
+
+
+
+
+

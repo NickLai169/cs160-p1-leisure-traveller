@@ -1,0 +1,69 @@
+html {
+    background-color: rgb(255, 250, 240);
+}
+
+/*use "#" for styling IDs. Only use it once, don't reuse it's bad practice*/
+#outer-wrapper {
+    width: 1500px;
+    height: 500px;
+    /* background-color: red; */
+    margin: auto;
+    padding: 50px, 0, 50px, 0;
+}
+#left-column {
+    width: 475px;
+    height: 500px;
+    /* background-color: rgb(0, 255, 85); */
+    float: left;
+    padding-left: 15px;
+}
+#middle-column {
+    width: 497px;
+    height: 500px;
+    border-left: 1.5px solid;
+    padding-left: 15px;
+    /* background-color: rgb(229, 255, 0); */
+    float: left;
+}
+#right-column {
+    width: 475px;
+    height: 500px;
+    border-left: 1.5px solid;
+    padding-left: 15px;
+    padding-left: 15px;
+    /* background-color: rgb(0, 217, 255); */
+    float: left;
+}
+
+/* Don't use anything to stype exising elements */
+h1 {
+    font-family: "Times New Roman";
+}
+h2 {
+    font-family: "DM sans";
+    font-weight: 500;
+}
+p {
+    font-family: "fantasy";
+    font-weight: 100;
+}
+img {
+    float: left;
+}
+
+/* use "." to stype classes, use if you want to reuse styling*/
+.category {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: white;
+
+}
+.card {
+    height: 100px;
+    padding: 20px;
+    width: 250px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px;
+    float: left;
+}

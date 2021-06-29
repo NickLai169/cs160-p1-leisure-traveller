@@ -1,0 +1,12 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: tomato;
+    background-color: blue;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
