@@ -1,0 +1,143 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Current Weather</title>
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+
+</head>
+
+<body>
+    <!-- Heading bar -->
+    <div class="container" style="background-color: #e5d5b2;">
+        <div class="row justify-content-xs-center">
+            <div class="col-xs-2">
+              <br>
+            </div>
+            <div class="col-3">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-light active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Day
+                    </label>
+                    
+                    <label class="btn btn-light">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Trip
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <img src="{% static 'weather/images/calendar.png' %}" alt="" style="width: 300px;">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    
+    <!-- Suggested locations -->
+    <div class="container" style="background-color: #d6c399;">
+        <!-- Search bar-->
+        <div class="d-flex justify-content-center">
+            <input type="text" placeholder="Search..">
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion" id="accordionExample">
+            <!-- Item 1 -->
+            <div class="d-grid gap-2 col-12 mx-auto">
+              <h2 class="accordion-header">
+                <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="row">
+                        <div class="col-2">
+                            <span class="badge badge-primary badge-pill">3.2</span> 
+                        </div>
+                        <div class="col-8">
+                            <h2>Fort Qaitbey</h3>
+                        </div>
+                        <div class="col-2 float-end"></div>
+                    </div>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="height: 100px;">
+                    <div class="col overflow-auto">
+                        <strong>
+                            Address: Corniche, Eastern Harbour
+                        </strong> 
+                        <p>
+                            Walk the long shore-front Corniche road of the Eastern Harbor heading west, and you'll finally arrive at Fort 
+                            Qaitbey. It may be a poor substitute for what was once the site of the mighty Pharos Lighthouse - one of the 
+                            seven wonders of the ancient world, which was toppled by a violent earthquake in 1303 - but this squat fort 
+                            has been standing guard over Alexandria since 1480.
+                        </p>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="d-grid gap-2 col-12 mx-auto">
+                <h2 class="accordion-header">
+                  <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <div class="row">
+                          <div class="col-2">
+                              <span class="badge badge-primary badge-pill">3.2</span> 
+                          </div>
+                          <div class="col-8">
+                              <h2>Alexandria's Underwater Ruins</h3>
+                          </div>
+                          <div class="col-2 float-end"></div>
+                      </div>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>
+                            Address: Corniche, Eastern Harbour
+                        </strong> 
+                        <p>
+                            To the northeast of the city, in the bay of Aboukir, archaeologists discovered the port city of Heracleion-Thonis 
+                            and have brought many of the treasures to the surface, now on display in Alexandria's museums. For now, though, 
+                            most of the recreational diving opportunities are still centered around the Eastern Harbor.
+                        </p>
+                    </div>
+                </div>
+              </div>
+
+            <!-- Item 3 -->
+            <div class="d-grid gap-2 col-12 mx-auto">
+                <h2 class="accordion-header">
+                  <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <div class="row">
+                          <div class="col-2">
+                              <span class="badge badge-primary badge-pill">4.4</span> 
+                          </div>
+                          <div class="col-8">
+                              <h2>Pompey's Pillar</h3>
+                          </div>
+                          <div class="col-2 float-end"></div>
+                      </div>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>
+                            Address: Abu Mandour Street, Carmous
+                        </strong> 
+                        <p>
+                            Pompey's Pillar rises from the ruins of the ancient and famous Serapeion (Temple of Serapis), which was once 
+                            used to store the overflow of manuscripts from the Great Library of Alexandria. This column of red Aswan 
+                            granite with a Corinthian capital, rising to a height of almost 27 meters, actually has nothing to do with 
+                            Pompey and was instead set up in AD 292 in honor of Diocletian, who supplied food for the starving population 
+                            after the siege of the city.
+                        </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>

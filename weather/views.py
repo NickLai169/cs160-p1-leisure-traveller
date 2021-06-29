@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, resolve_url
 from django.http import HttpResponse
 
 def forecast(request):
@@ -18,3 +18,6 @@ def index(request):
 
 def landing(request):
     return render(request, 'weather/landing.html')
+
+def trip_planner(request):
+    return render(request, 'weather/trip-planner-day.html')

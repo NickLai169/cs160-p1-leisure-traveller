@@ -8,5 +8,6 @@ urlpatterns = [
     path('comparison/', views.comparison, name='comparison'),
     path('comparison/alert/', views.comparison_alert, name='comparison_alert'),
     path('', views.index, name='index'),
-    path("landing/", views.landing, name="landing")
+    path("landing/", views.landing, name="landing"),
+    path("trip-planner/", views.trip_planner, name="trip-planner"),
 ]
